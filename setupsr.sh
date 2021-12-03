@@ -9,7 +9,7 @@ cd /usr/share/nginx/www
 git init
 git pull https://github.com/interviewDemo/interviewProject.git .
 useradd -m -p "gonzo" Alice
-useradd -m -p "kermit" Malory
+useradd -m -p "kermit" Malory # alternatively we could add both alice & malory to the same group then assign the group permissions: groupadd -m marketing, usermod -a -G marketing Alice,Mallory chown -R marketing:marketing. 
 useradd -m -p "piggy" Bobby
 useradd -m -p "chef" charlie
 su Alice
